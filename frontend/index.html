@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>GeminiAI Critic App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <div class="container">
+    <h1>GeminiAI Presentation Critic</h1>
+    <p>
+      Get real-time AI coaching while you present —
+      subtle, precise, and only when it matters.
+    </p>
+
+    <button class="primary" onclick="startLive()">
+    Practice live
+    </button>
+
+    <button class="secondary" onclick="uploadVideo()">
+    Review a recording
+    </button>
+
+    <div class="hint">
+      No interruptions. No generic advice. Just timely cues.
+    </div>
+  </div>
+
+  <script>
+    function startLive() {
+      // later: route to live coaching view
+      window.location.href = "live.html";
+    }
+
+    function uploadVideo() {
+      // later: route to upload view
+      window.location.href = "upload.html";
+    }
+  </script>
+
 </body>
 </html>
