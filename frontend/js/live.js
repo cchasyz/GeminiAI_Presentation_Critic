@@ -211,15 +211,15 @@ setInterval(() => {
         lastFeedbackRequestTime = now;
 
         // ONLY bother the user 50% of the time
-        if (Math.random() < 0.5) {
+        // if (Math.random() < 0.5) {
             if (currentTranscript.trim().length > 20) {
                 console.log("Luck rolled: Sending for feedback...");
                 getGeminiFeedback(currentTranscript.trim());
             }
-        } else {
-            console.log("Luck rolled: Staying silent this interval.");
-            currentTranscript = ""; // Clear transcript so we don't carry over old mistakes
-        }
+        // } else {
+            // console.log("Luck rolled: Staying silent this interval.");
+            // currentTranscript = ""; // Clear transcript so we don't carry over old mistakes
+        // }
     }
 }, 1000);
 

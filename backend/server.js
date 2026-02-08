@@ -70,7 +70,7 @@ app.post('/api/coach', async (req, res) => {
     console.log(`Analyzing transcript (${transcript.length} chars):`, transcript.substring(0, 50) + "...");
 
     // 1. Generate Feedback Text
-    const TEXT_MODEL_NAME = 'models/gemini-2.0-flash-lite';
+    const TEXT_MODEL_NAME = 'models/gemini-2.5-flash';
     const textPrompt = `You are a helpful presentation teacher. 
     Use very simple, natural language and don't be formal. Talk like a real person giving a quick tip.
     The user is practicing a speech. 
@@ -286,6 +286,6 @@ app.post('/api/review-video', upload.single('video'), async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
   console.log(`Using Gemini API Key: ${process.env.GEMINI_API_KEY ? '******' + process.env.GEMINI_API_KEY.slice(-4) : 'NOT SET'}`);
-  console.log(`Text Model: models/gemini-2.0-flash-lite`);
+  console.log(`Text Model: models/gemini-2.5-flash`);
   console.log(`Audio Model: models/gemini-2.5-flash-preview-tts`);
 });
