@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Live Practice — StageWhisper</title>
+  <title>Live Practice — GeminiAI Presentation Critic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="live.css" />
 </head>
+
 <body>
 
   <div class="app">
@@ -16,21 +18,18 @@
     </header>
 
     <main>
-        <div class="camera-frame">
-            <video id="video" autoplay muted playsinline></video>
+      <div class="camera-frame">
+        <video id="video" autoplay muted playsinline></video>
 
-            <div id="cue" class="cue hidden">
-            Slow down
-            </div>
+        <div id="cue" class="cue hidden">
+          Slow down
         </div>
+      </div>
     </main>
 
 
     <footer>
-        
-    <button onclick="interrupt('Now I can speak')">
-        Test Voice
-    </button>
+
       <button id="endBtn">End session</button>
     </footer>
 
@@ -38,4 +37,5 @@
 
   <script src="js/live.js"></script>
 </body>
+
 </html>
